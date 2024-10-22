@@ -10,6 +10,17 @@ while True:
     print(line)
 
 ```
+In other way, we can use the While loop and use with open
+```python
+with open('myfile.txt', 'r') as f:
+  while True:
+    line = f.readline()
+    if not line:
+      break
+    print(line)
+
+```
+
 The readlines() method reads all the lines of the file and returns them as a list of strings.
 
 # writelines() method
