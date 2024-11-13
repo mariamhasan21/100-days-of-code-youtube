@@ -1,7 +1,7 @@
 # def double(x):
 #   return x*2
 
-def appl(fx, value):
+def appl(fx, value): #fx is a function and value is a number. It helps to add extra 6 with the function fx's value
   return 6 + fx(value)
 
 double = lambda x: x * 2
