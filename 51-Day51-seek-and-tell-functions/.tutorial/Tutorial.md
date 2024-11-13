@@ -24,6 +24,9 @@ with open('file.txt', 'r') as f:
 
   # Seek to the saved position
   f.seek(current_position)
+
+  #Prints the position
+  print(current_position)
 ```
 ## truncate() function
 When you open a file in Python using the open function, you can specify the mode in which you want to open the file. If you specify the mode as 'w' or 'a', the file is opened in write mode and you can write to the file. However, if you want to truncate the file to a specific size, you can use the truncate function.
@@ -31,12 +34,11 @@ When you open a file in Python using the open function, you can specify the mode
 Here is an example of how to use the truncate function:
 
 ```python
-with open('sample.txt', 'w') as f:
+with open('sample.txt', 'w') as f: #Writes in the file
   f.write('Hello World!')
-  f.truncate(5)
+  f.truncate(5) #Limits the writing to 5
 
 with open('sample.txt', 'r') as f:
   print(f.read())
 
 ```
-## [Next Lesson>>](https://replit.com/@codewithharry/52-Day52-Lambda-Functions)
